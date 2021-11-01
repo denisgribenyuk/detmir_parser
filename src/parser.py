@@ -64,7 +64,7 @@ def parse_data(input_data: List) -> List:
 
 
 def write_data_to_csv(data: List) -> None:
-    with open('result.csv', mode='w') as stream:
+    with open('../result/result.csv', mode='w') as stream:
         col_names = ['id', 'name', 'price', 'city', 'old_price', 'url']
         writer = csv.DictWriter(stream, fieldnames=col_names)
         writer.writeheader()
